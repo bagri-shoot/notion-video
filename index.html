@@ -25,7 +25,15 @@
 
 <body>
   <video autoplay muted loop playsinline>
-    <source src="Sequence 1_1.mp4" type="Sequence 1_1.mp4" />
+    <source src="https://bagri-shoot.github.io/notion-video/Sequence%201.mp4" type="video/mp4" />
   </video>
+
+  <script>
+  const video = document.querySelector('video');
+  video.addEventListener('ended', () => {
+    video.currentTime = 0;
+    video.play();
+  });
+</script>
 </body>
 </html>
